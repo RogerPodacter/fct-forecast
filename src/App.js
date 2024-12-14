@@ -141,8 +141,13 @@ function App() {
 
   return (
     <div className="App">
-      <h1>FCT Mining Forecast</h1>
-      <button onClick={calculateAdjustmentPrediction} disabled={isLoading}>
+      <h1>
+        <span style={{ fontWeight: 'bold', color: '#3F19D9' }}>F</span>
+        <span style={{ color: '#9C9EA4' }}>ore</span>
+        <span style={{ fontWeight: 'bold', color: '#3F19D9' }}>C</span>
+        <span style={{ color: '#9C9EA4' }}>as</span>
+        <span style={{ fontWeight: 'bold', color: '#3F19D9' }}>T</span>
+      </h1>      <button onClick={calculateAdjustmentPrediction} disabled={isLoading}>
         {isLoading ? 'Refreshing...' : 'Refresh Forecast'}
       </button>
       <pre>{forecastResults}</pre>
