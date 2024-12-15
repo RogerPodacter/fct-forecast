@@ -137,7 +137,7 @@ function App() {
 
   useEffect(() => {
     calculateAdjustmentPrediction();
-  }, []);
+  }, [calculateAdjustmentPrediction]);
 
   return (
     <div className="App">
